@@ -1,0 +1,15 @@
+.m360ivelocity h2 {
+    padding-top : 20px;
+}
+
+#360i-logo {
+    background : url("../images/360i-logo.png") no-repeat scroll 0 0 transparent;
+    height     : 50px;
+    width      : 143px;
+}
+
+iframe#m360ivelocity-iframe {
+    margin-top : 20px;
+    min-height : 1024px;
+    width      : 100%;
+}
