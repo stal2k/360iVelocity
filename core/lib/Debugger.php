@@ -1,6 +1,6 @@
 <?php
 
-class WPHootSuiteDashboardDebugger {
+class M360IVelocity {
 
 	/**
 	 * Creates an html page with printed variable dumped.
