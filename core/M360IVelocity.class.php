@@ -263,7 +263,29 @@ class AdminController {
     public function m360ivelocity_settings_validate( $data ) {
         return $data;
     }
+    function add_scripts() {
 
+		wp_enqueue_script( 'm360ivelocity', plugin_dir_url( __FILE__ ) . '/core/js/m360ivelocity-post.js', 'jquery' );
+
+		$type = "";
+
+		if ( preg_match( "/youtube\.com\/watch/i", self::$url ) )
+			$type = 'video';
+		elseif ( preg_match( "/vimeo\.com\/[0-9]+/i", self::$url ) )
+			$type = 'video';
+		elseif ( preg_match( "/flickr\.com/i", self::$url ) )
+			$type = 'photo';
+
+		$data = array(
+			'pressThisUrl' => plugin_dir_url( 'M360IVelocity-post.php' ),
+			'content' => self::$content,
+			'url' => self::$url,
+			'urlEncoded' => urlencode( self::$url ),
+			'type' => $type
+		);
+
+		wp_localize_script( 'm360ivelocity', 'M360IVelocity', $data );
+	}
     /**
      * Callback method that renders the plugin 'Dashboard' admin page.
      */
