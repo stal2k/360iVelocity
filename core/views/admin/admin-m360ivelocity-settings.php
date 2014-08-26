@@ -26,7 +26,7 @@
 			<div class="m360ivelocity">
 			<div class="icon32" id="360i-logo"><br></div>
 				<H3 class="title"><?php _e('Video Tutorial on Using Bookmarklet') ?></h3>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/XdMj3F_xy6Q?rel=0" frameborder="0" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="//www.youtube.com/embed/V6Yq8FddOUE" frameborder="0" allowfullscreen></iframe>
 			</div>
 			<?php
 		}
