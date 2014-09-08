@@ -52,7 +52,7 @@ class M360IVelocity {
 	 * @param string $file Absolute path to main plugin file which contains the header.
 	 *
 	 * @return object The plugin data fetched from the main file header.
-	 */
+	
 	public static function get_plugin_data($file = __FILE__) {
 		$default_headers = array('Name'        => 'Plugin Name',
 		                         'PluginURI'   => 'Plugin URI',
@@ -77,7 +77,7 @@ class M360IVelocity {
 	public function __construct() {
 		;
 	}
-
+ */
 	/**
 	 * Initialize plugin
 	 */
@@ -263,7 +263,7 @@ class AdminController {
     public function m360ivelocity_settings_validate( $data ) {
         return $data;
     }
-    function add_scripts() {
+    /** function add_scripts() {
 
 		wp_enqueue_script( 'm360ivelocity', plugin_dir_url( __FILE__ ) . '/core/js/m360ivelocity-post.js', 'jquery' );
 
@@ -286,6 +286,8 @@ class AdminController {
 
 		wp_localize_script( 'm360ivelocity', 'M360IVelocity', $data );
 	}
+	*/
+	
     /**
      * Callback method that renders the plugin 'Dashboard' admin page.
      */

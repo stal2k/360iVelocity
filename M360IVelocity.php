@@ -3,8 +3,8 @@
 Plugin Name: 360i Velocity
 Plugin URI: https://github.com/stal2k/360iVelocity
 Description: Mashable Velocity WP Integration
-Version: 0.0.5
-Author: Greg Garritani
+Version: 0.0.8 Alpha
+Author: Greg Garritani & David Spektor
 Author URI: http://www.gtek-sc.com
 License: GPL2 or later
 */
