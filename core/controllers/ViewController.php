@@ -38,7 +38,7 @@ class M360IVelocityViewController {
 		if (!empty($vars)) {
 			extract($vars, EXTR_SKIP);
 		}
-		$plugin_data = M360IVelocity::get_instance()->get_plugin_data(M360IVelocity_PLUGIN_FILE);
+		$plugin_data = M360IVelocity::get_instance()->get_plugin_data(M360IVELOCITY_PLUGIN_FILE);
 		$path        = M360IVELOCITY_PLUGIN_DIR_PATH;
 		$view_error  = "{$path}core/views/view-error.php";
 
